@@ -1,0 +1,161 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f5f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+}
+
+.container .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div img {
+    height: 70px;
+    width: 70px;
+    /* padding: 30px 10px 0px  170px; */
+}
+
+h1 {
+    /* display: inline-block; */
+    color: #333;
+    margin-bottom: 24px;
+}
+
+h1 span {
+    color: blue;
+}
+
+.personal-info,
+.input-div {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.personal-info input,
+.input-div input,
+select {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+
+button {
+    padding: 10px 16px;
+    font-size: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.symptom-add {
+    width: 200px;
+}
+
+.symptom-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.symptom-list li {
+    margin: 6px 0;
+    background-color: #f0f0f0;
+    padding: 7px 12px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.del-btn {
+    background-color: #dc3545;
+    font-size: 15px;
+    padding: 7px 12px;
+    border-radius: 6px;
+}
+
+.response-box {
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: monospace;
+}
+
+.autocomplete-container {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.no-option {
+    padding: 10px;
+    color: gray;
+}
+
+.submit-btn {
+    width: 48%;
+    margin-right: 12px;
+}
+
+.clear-btn {
+    width: 48%;
+    margin-left: 12px;
+}
